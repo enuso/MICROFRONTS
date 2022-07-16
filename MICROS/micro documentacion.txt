@@ -1,0 +1,28 @@
+INSTALACIÓN:
+	[FUENTE CREACION DE UN MF ->https://dev.to/devsmitra/the-complete-guide-to-micro-frontend-with-reactjs-for-2022-36b2]
+	[npx create-mf-app] -> cd nombre -> npm install -> npm start
+	
+	
+	
+	ERROR[ NO PROCESA JSX https://stackoverflow.com/questions/63005011/support-for-the-experimental-syntax-jsx-isnt-currently-enabled];
+	
+	En nuestra aplicación host tendremos que crear un archivo babel.config.js con la siguiente información:
+		module.exports = {
+    			presets:[
+        			"@babel/preset-env",
+       			 "@babel/preset-react"
+   				]
+			}
+			
+	ERROR[ NO PROCESA FORMATOS DE IMAGEN:];
+	
+		{
+		test: /\.(png|jpe?g|gif)$/i,
+	      loader: 'file-loader',
+	      options: {
+	        name: '[path][name].[ext]',
+	      },
+	      },
+      ---------------------------------------------------------------------------------------------------------
+      Ejecutar comando para hacer efectivos los cambios:
+		npm install --save-dev file-loader

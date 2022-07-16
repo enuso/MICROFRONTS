@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Mont-ser', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+header{
+    background-color: #15172b;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.buscar{
+    width: 100px;
+    height: 35px;
+    padding: 0 20px;
+    font-size: 1em;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+.buscar:hover{
+    width: 230px;
+    border-radius: 5px;
+}
+.titulo{
+    color:whitesmoke
+}
+.container_header{
+    max-width:1400px ;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 200px;
+}
+.logo{
+    font-size: 30px;
+    color: white;
+}
+.menu nav ul{
+    display: flex;
+}
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+.menu nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(210, 213, 228);
+    transition:all;
+    transition-duration: 0.7s;
+    position: relative;
+}
+
+.menu nav ul li a::after {
+    content: '';
+    border-bottom: 2px solid rgb(210, 213, 228);
+    bottom: -10px;
+    left: 0;
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+
+.menu nav ul li a:hover::after{
+    display: block;
+}
+
+
+.btn_header_login,
+.btn_header_register{
+     background: rgba(255, 255, 255, 0.3);
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    transition: background,font-size;
+    transition-duration: 0.5s;
+    margin-left: 6px;
+    height: 40px;
+
+    /* background: rgba( 255, 255, 255, 0.25 ); */
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+white-space: nowrap;
+}
+.btn_header_login:hover,
+.btn_header_register:hover{
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+.shopping_cart_img{
+    height: 10px;
+}
+.header_register{
+    display: flex;
+    align-items: center;
+}
+.header_option_lupa{
+    height: 70%;
+    transition: height;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.header_option_lupa:hover{
+    height: 75%;
+}
+.menu nav ul li{
+    height: 60px;
+    padding-top: 1em;
+}
